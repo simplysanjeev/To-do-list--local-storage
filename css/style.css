@@ -1,0 +1,151 @@
+html,body{
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 80vw;
+    height: 90vh;
+    background-color: #D4D6DD;
+}
+
+.to__do__list__and__input__container{
+    margin: 20px;
+    background-color: #FDFDFD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.input__tag__container{
+    width: 95%;
+    border-radius: 40px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECECEC;
+}
+
+.to__do__list__item{
+    margin: 10px 0px;
+}
+
+.to__do__list__item__input{
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    color: grey;
+}
+.complete__all__task__and__clear__completed__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete__all__task__button, .clear__completed__button{
+    margin: 5px 30px;
+}
+
+.number__of__task__left__and__all__and__uncompleted__completed__button__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number__of__task__left{
+    margin: 10px;
+}
+
+.all__uncompleted__completed__button__container{
+    margin: 10px;
+}
+
+/* list css */
+.to__do__list__container{
+    padding: 10px 0px;
+    width: 95%;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+.to__do__list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.list__item{
+    display: none;
+}
+.to__do__list__item{
+    position: relative;
+}
+.list__item__label::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0px 20px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+}
+input:checked + .list__item__label::before{
+    background-color: lightgrey;
+}
+
+.list__item__label{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    color: grey;
+    word-break: break-all;
+}
+
+.remove__list__item__button{
+    font-size: 20px;
+    position: absolute;
+    right:20px;
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    color: lightgray;
+    border: 0px solid transparent;
+    height: 100%;
+}
+button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.remove__list__item__button::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f057";
+    font-size: 30px;
+}
+.add__to__list::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f055";
+    font-size: 30px;
+}

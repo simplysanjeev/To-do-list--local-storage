@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            To Do List
+        </title>
+        <script src="https://kit.fontawesome.com/7e5368e77b.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="to__do__list__and__input__container">
+            <div class="input__tag__container">
+                <i class="fas fa-clipboard-list"></i>
+                <input type="text" placeholder="Type Your To Do List" name="to__do__list__item__input" class="to__do__list__item__input">
+                <button class="add__to__list"></button>
+            </div>
+            <div class="complete__all__task__and__clear__completed__container">
+                <button class="complete__all__task__button"><i class="fas fa-check-double"></i>Complete all tasks</button>
+                <button class="clear__completed__button">Clear completed</button>
+            </div>
+           <div class="to__do__list__container">
+               <ul class="to__do__list">
+                   <!-- <li class="to__do__list__item">
+                       <input type="checkbox" name="" id="item__1" class="list__item">
+                       <label for="item__1" class="list__item__label">content</label>
+                       <button class="remove__list__item__button"></button>
+                   </li> -->
+               </ul>
+           </div>
+           <div class="number__of__task__left__and__all__and__uncompleted__completed__button__container">
+               <div class="number__of__task__left">
+                   <span class="number__of__task">0</span>
+                   <button class="task__left__button">tasks left</button>
+               </div>
+               <div class="all__uncompleted__completed__button__container">
+                    <button class="all__to__do__list__item">All</button>
+                    <button class="uncompleted__to__do__list__item">Uncompleted</button>
+                    <button class="completed">Completed</button>
+                </div>
+           </div>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
