@@ -8,26 +8,43 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!--TO DO List Container-->
         <div id="container">
+            <!-- Tag to take input of task description -->
             <div id="task-input-container">
                 <i class="fas fa-clipboard-list font-size-30px"></i>
                 <input type="text" placeholder="Type Your To Do List" name="task-input" id="task-input">
                 <button id="add-task" class="button"><i class="far fa-plus-square"></i></button>
             </div>
+            <!--
+                Button container:
+                    1. mark all task as completed
+                    2. delete all completed task 
+            -->
             <div class="button-container up">
                 <button class="button complete-all-task"><i class="fas fa-check-double"></i>Complete all tasks</button>
                 <button class="button clear-completed">Clear completed</button>
             </div>
+            <!-- TODO List container -->
            <div class="to-do-list-container">
+            <!--Message Box to Show Message When List is Empty-->
             <div id="message"> No Task &nbsp; <i class="fas fa-tasks"></i> &nbsp; To Show </div>
-               <ul id="to-do-list">
+            <!--TODO List-->
+            <ul id="to-do-list">
+                    <!--Sample List Item-->
                    <!-- <li class="list-item" id="">
                        <button class="circle"></button>
                        <div class="task">Lorem ipsum dolor</div>
                        <button class="delete"><i class="far fa-times-circle"></i></button>
                    </li> -->
-               </ul>
+            </ul>
            </div>
+            <!--
+                Button container for button to:
+                    1. Switch to All tasks
+                    2. Switch to Uncompleted tasks
+                    3. Switch to Completed tasks
+            -->
            <div class="button-container down">
                <div id="task-status">
                    <span id="count">0</span>

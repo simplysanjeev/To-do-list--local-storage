@@ -7,6 +7,8 @@ body{
     justify-content: center;
     background-color: #D4D6DD;
 }
+
+/* to do list container */
 #container{
     height: fit-content;
     margin: 20px 0;
@@ -14,6 +16,7 @@ body{
     background-color: #F9FDFC;
 }
 
+/* Task Input Container */
 #task-input-container{
     margin: 10px 5px;
     background-color: #EEEEEE;
@@ -41,10 +44,13 @@ body{
     font-size: 30px;
 }
 
+
+/* TO DO LIST */
 .to-do-list{
     min-height: 100px;
 }
 
+/* CSS for button container */
 .button-container{
     display: flex;
     justify-content: space-between;
@@ -56,6 +62,8 @@ body{
 .down{
     border-top: 1px solid #D4D6DD; 
 }
+
+/* CSS For button */
 .button{
     background-color: transparent;
     outline: none;
@@ -68,7 +76,7 @@ body{
     cursor: pointer;
 }
 
-
+/* Message Box */
 #message{
     height: 100px;
     font-size: 30px;
@@ -85,13 +93,13 @@ body{
 .font-size-30px{
     font-size:30px;
 }
-
+/* CSS for TODO List */
 #to-do-list{
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-
+/* CSS for list item */
 .list-item{
     margin: 0px;
     padding: 5px 10px;
@@ -100,6 +108,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+/* CSS for mark task as completed */
 .circle{
     border-radius: 50%;
     width: 20px;
@@ -110,7 +119,14 @@ body{
     margin-right: 5px;
     /* background-color: greenyellow; */
 }
+.task-completed{
+    background-color : greenyellow;
+}
 
+.task-uncompleted{
+    background-color : grey;
+}
+/* Css for Div to store task description */
 .task{
     width: 90%;
     height: 100%;
@@ -119,29 +135,23 @@ body{
     font-size: 24px;
 }
 
-.task::-webkit-scrollbar {
-    display: none;
-  }
-.delete{
-    outline: none;
-    font-size: 25px;
-    border: 0px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.task-completed{
-    background-color : greenyellow;
-}
-
-.task-uncompleted{
-    background-color : grey;
-}
-
 .strike-off{
     text-decoration: line-through;
 }
 
 .remove-strike-off{
     text-decoration: none;
+}
+
+.task::-webkit-scrollbar {
+    display: none;
+  }
+
+/* CSS for Delete Task Button */
+.delete{
+    outline: none;
+    font-size: 25px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
 }
