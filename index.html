@@ -8,38 +8,37 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="to__do__list__and__input__container">
-            <div class="input__tag__container">
-                <i class="fas fa-clipboard-list"></i>
-                <input type="text" placeholder="Type Your To Do List" name="to__do__list__item__input" class="to__do__list__item__input">
-                <button class="add__to__list"></button>
+        <div id="container">
+            <div id="task-input-container">
+                <i class="fas fa-clipboard-list font-size-30px"></i>
+                <input type="text" placeholder="Type Your To Do List" name="task-input" id="task-input">
+                <button id="add-task" class="button"><i class="far fa-plus-square"></i></button>
             </div>
-            <div class="complete__all__task__and__clear__completed__container">
-                <button class="complete__all__task__button"><i class="fas fa-check-double"></i>Complete all tasks</button>
-                <button class="clear__completed__button">Clear completed</button>
+            <div class="button-container up">
+                <button class="button complete-all-task"><i class="fas fa-check-double"></i>Complete all tasks</button>
+                <button class="button clear-completed">Clear completed</button>
             </div>
-           <div class="to__do__list__container">
-               <ul class="to__do__list">
-                   <!-- <li class="to__do__list__item">
-                       <input type="checkbox" name="" id="item__1" class="list__item">
-                       <label for="item__1" class="list__item__label">content</label>
-                       <button class="remove__list__item__button"></button>
+           <div class="to-do-list-container">
+            <div id="message"> No Task &nbsp; <i class="fas fa-tasks"></i> &nbsp; To Show </div>
+               <ul id="to-do-list">
+                   <!-- <li class="list-item" id="">
+                       <button class="circle"></button>
+                       <div class="task">Lorem ipsum dolor</div>
+                       <button class="delete"><i class="far fa-times-circle"></i></button>
                    </li> -->
                </ul>
            </div>
-           <div class="number__of__task__left__and__all__and__uncompleted__completed__button__container">
-               <div class="number__of__task__left">
-                   <span class="number__of__task">0</span>
-                   <button class="task__left__button">tasks left</button>
+           <div class="button-container down">
+               <div id="task-status">
+                   <span id="count">0</span>
+                   <span id="task-left">tasks</span>
                </div>
-               <div class="all__uncompleted__completed__button__container">
-                    <button class="all__to__do__list__item">All</button>
-                    <button class="uncompleted__to__do__list__item">Uncompleted</button>
-                    <button class="completed">Completed</button>
+               <div id="list-by-status">
+                    <button id="all-tasks" class="button">All</button>
+                    <button id="uncompleted-tasks" class="button">Uncompleted</button>
+                    <button id="completed-tasks" class="button">Completed</button>
                 </div>
            </div>
-            </div>
         </div>
         <script src="script/script.js"></script>
     </body>
